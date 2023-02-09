@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav"
+    app:startDestination="@id/logInFragment2">
+    <fragment
+        android:id="@+id/logInFragment2"
+        android:name="fragments_auth.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment2_to_passwordRecoveryFragment2"
+            app:destination="@id/passwordRecoveryFragment2" />
+        <action
+            android:id="@+id/action_logInFragment2_to_logUpFragment"
+            app:destination="@id/logUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordRecoveryFragment2"
+        android:name="fragments_auth.PasswordRecoveryFragment"
+        android:label="fragment_password_recovery"
+        tools:layout="@layout/fragment_password_recovery" />
+    <fragment
+        android:id="@+id/logUpFragment"
+        android:name="fragments_auth.LogUpFragment"
+        android:label="fragment_log_up"
+        tools:layout="@layout/fragment_log_up" >
+        <action
+            android:id="@+id/action_logUpFragment_to_chooseReasonFragment"
+            app:destination="@id/chooseReasonFragment" />
+        <action
+            android:id="@+id/action_logUpFragment_to_enterCodeFragment"
+            app:destination="@id/enterCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseReasonFragment"
+        android:name="fragments_auth.ChooseReasonFragment"
+        android:label="fragment_choose_reason"
+        tools:layout="@layout/fragment_choose_reason" >
+        <action
+            android:id="@+id/action_chooseReasonFragment_to_patientPhoneFragment"
+            app:destination="@id/patientPhoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientPhoneFragment"
+        android:name="fragments_auth.PatientPhoneFragment"
+        android:label="fragment_patient_phone"
+        tools:layout="@layout/fragment_patient_phone" >
+        <action
+            android:id="@+id/action_patientPhoneFragment_to_logUpFragment"
+            app:destination="@id/logUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterCodeFragment"
+        android:name="fragments_auth.EnterCodeFragment"
+        android:label="fragment_enter_code"
+        tools:layout="@layout/fragment_enter_code" />
+</navigation>

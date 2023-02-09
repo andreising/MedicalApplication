@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <group android:id="@+id/first">
+            <item android:title="@string/form"
+                android:id="@+id/form"/>
+            <item android:title="@string/geolocation"
+                android:id="@+id/geolocation"/>
+            <item android:title="@string/calendar"
+                android:id="@+id/calendar"/>
+            <item android:title="@string/council"
+                android:id="@+id/council"/>
+            <item android:title="@string/heal"
+                android:id="@+id/heal"/>
+            <item android:title="@string/medicine"
+                android:id="@+id/medicine"/>
+    </group>
+    <group android:id="@+id/second">
+            <item android:title="@string/access_and_control"
+                android:id="@+id/access_and_control"/>
+            <item android:title="@string/private_information"
+                android:id="@+id/private_information"/>
+            <item android:title="@string/settings"
+                android:id="@+id/settings"/>
+        <item android:title=""
+            app:actionLayout="@layout/exit_layout"
+            android:id="@+id/exit" />
+</group>
+
+</menu>
