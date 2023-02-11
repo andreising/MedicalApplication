@@ -16,7 +16,7 @@ class LogInFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentLogInBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -29,7 +29,7 @@ class LogInFragment : Fragment() {
                 controller.navigate(R.id.passwordRecoveryFragment2)
             }
             tvLogUp.setOnClickListener {
-                controller.navigate(R.id.logUpFragment)
+                controller.navigate(R.id.chooseReasonFragment)
             }
             buttonEnter.setOnClickListener {
                 startActivity(Intent(activity, MainActivity::class.java))

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="fragments_auth.EnterCodeFragment">
 
 
@@ -48,10 +48,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:autofillHints=""
             android:backgroundTint="@color/white"
             android:ems="10"
             android:inputType="number"
-            android:autofillHints=""
             tools:ignore="LabelFor" />
     </LinearLayout>
 
@@ -70,13 +70,16 @@
         android:id="@+id/buttonLogUp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/button"
         android:text="@string/log_up"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
         app:layout_constraintStart_toStartOf="@+id/linearLayout7"
-        tools:layout_editor_absoluteY="317dp"
+        app:layout_constraintTop_toBottomOf="@+id/didnr_receive_tv"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

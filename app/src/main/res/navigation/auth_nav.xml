@@ -13,8 +13,8 @@
             android:id="@+id/action_logInFragment2_to_passwordRecoveryFragment2"
             app:destination="@id/passwordRecoveryFragment2" />
         <action
-            android:id="@+id/action_logInFragment2_to_logUpFragment"
-            app:destination="@id/logUpFragment" />
+            android:id="@+id/action_logInFragment2_to_chooseReasonFragment"
+            app:destination="@id/chooseReasonFragment" />
     </fragment>
     <fragment
         android:id="@+id/passwordRecoveryFragment2"
@@ -27,17 +27,21 @@
         android:label="fragment_log_up"
         tools:layout="@layout/fragment_log_up" >
         <action
-            android:id="@+id/action_logUpFragment_to_chooseReasonFragment"
-            app:destination="@id/chooseReasonFragment" />
-        <action
             android:id="@+id/action_logUpFragment_to_enterCodeFragment"
             app:destination="@id/enterCodeFragment" />
+        <argument
+            android:name="MyArgs"
+            app:argType="string"
+            android:defaultValue="default" />
     </fragment>
     <fragment
         android:id="@+id/chooseReasonFragment"
         android:name="fragments_auth.ChooseReasonFragment"
         android:label="fragment_choose_reason"
         tools:layout="@layout/fragment_choose_reason" >
+        <action
+            android:id="@+id/action_chooseReasonFragment_to_logUpFragment"
+            app:destination="@id/logUpFragment" />
         <action
             android:id="@+id/action_chooseReasonFragment_to_patientPhoneFragment"
             app:destination="@id/patientPhoneFragment" />

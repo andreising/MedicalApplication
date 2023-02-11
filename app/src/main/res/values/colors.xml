@@ -18,6 +18,7 @@
     <color name="drawer_menu">#E3F2FF</color>
     <color name="auth_bg">#F8FBFF</color>
     <color name="red">#FF0000</color>
+    <color name="main">#DCEAFF</color>
 
 
 </resources>
