@@ -42,4 +42,9 @@
     <string name="name">Имя</string>
     <string name="surname">Фамилия</string>
     <string name="resend_code">Отправить код повторно</string>
+    <string name="centers">Центры:</string>
+    <string name="clinic">Клиника:</string>
+    <string name="specialists_of_clinic">Специалисьы клиники</string>
+    <string name="methods">Методики для онлайн прохождения/Онлайн методики</string>
+    <string name="empty_history">История поиска пуста</string>
 </resources>

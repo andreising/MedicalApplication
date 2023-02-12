@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="news">
+        <item>Инновации</item>
+        <item>Новости</item>
+        <item>Магазин</item>
+        <item>Группы</item>
+        <item>Фонд</item>
+        <item>Отзывы</item>
+    </string-array>
+</resources>
